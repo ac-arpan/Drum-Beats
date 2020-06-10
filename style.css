@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #031321; */
+    background: #031321 url('./bg/bg-one.jpg') ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.header{
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    color: #cae7ff;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3;
+    font-family: monospace;
+}
+.main-container{
+    display: flex;
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.pad-container{
+    height: 99%;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.row{
+    width: 100%;
+    height: 25%;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row > div {
+    height: 100%;
+    width: 25%;
+    border: 1px solid #2196f3;
+    border-radius: 10px;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.left-beats{
+    height: 99%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.right-beats{
+    height: 99%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.beats{
+    width: 0%;
+    height: 5%;
+    margin: 3px 0 2px 0;
+    border: 1px solid #2196f3;
+    box-shadow: 0 0 5px #2196f3,0 0 5px #2196f3,0 0 5px #2196f3;
+    border-radius: 8px;
+    background-color: none;
+
+}
+.right-beats{
+    height: 99%;
+    width: 20%;
+    align-items: flex-end;
+}
+.animate{
+    animation: dance 0.2s ease-out;
+}
+@keyframes dance{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+
+    }
+}
+@media only screen and (max-width:870px){
+    .main-container{
+        height: 50vh;
+    }
+}
+@media only screen and (max-width:968px){
+    .header{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:1053px){
+    body{
+        background: #031321 url('./bg/bg-one.jpg') ;
+        background-size: inherit;
+    }
+}
+
